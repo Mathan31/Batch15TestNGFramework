@@ -12,8 +12,8 @@ public class TC01_Login extends BaseClass{
 	@Test(priority = 1)
 	public void loginFieldValidation() {
 		boolean result = new LoginPage()
-							.verifyElement();
-						assertTrue(result);
+				.verifyElement();
+				assertTrue(result);
 	}
 	
 	@Test(priority = 2)

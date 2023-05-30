@@ -10,28 +10,32 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import utilities.PropertiesReader;
+
 public class BaseClass {
 	
 	public static WebDriver driver;
-	public int iBrowser = 1; //1 - Chrome,2 - FF,3 - Edge,4 - IE
-	public String sURL = "https://uibank.uipath.com/";
+	public String fileName = "environment";
+	public String iBrowser = PropertiesReader.getPropertyValue(fileName, "Browser"); //1 - Chrome,2 - FF,3 - Edge,4 - IE
+	public String sURL = PropertiesReader.getPropertyValue(fileName, "URL");
+	
 	
 	@BeforeClass
 	public void invokeBrowser() {
 		switch (iBrowser) {
-		case 1:
+		case "Chrome":
 			System.out.println("User option is : "+iBrowser+",So invoking Chrome browser");
 			driver = new ChromeDriver();
 			break;
-		case 2:
+		case "Firefox":
 			System.out.println("User option is : "+iBrowser+",So invoking Firefox browser");
 			driver = new FirefoxDriver();
 			break;
-		case 3:
+		case "Edge":
 			System.out.println("User option is : "+iBrowser+",So invoking Edge browser");
 			driver = new EdgeDriver();
 			break;
-		case 4:
+		case "IE":
 			System.out.println("User option is : "+iBrowser+",So invoking IE browser");
 			driver = new InternetExplorerDriver();
 			break;

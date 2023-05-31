@@ -9,16 +9,18 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 
+import utilities.ExcelReader;
 import utilities.PropertiesReader;
 
 public class BaseClass {
 	
-	public static WebDriver driver;
+	public WebDriver driver; //545642121
 	public String fileName = "environment";
 	public String iBrowser = PropertiesReader.getPropertyValue(fileName, "Browser"); //1 - Chrome,2 - FF,3 - Edge,4 - IE
 	public String sURL = PropertiesReader.getPropertyValue(fileName, "URL");
-	
+	public String excelFile = "";
 	
 	@BeforeClass
 	public void invokeBrowser() {
@@ -47,7 +49,7 @@ public class BaseClass {
 		}
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.get(sURL);
 	}
 	
@@ -56,5 +58,10 @@ public class BaseClass {
 		driver.quit();
 	}
 	
+	@DataProvider(name = "TestData")
+	public Object[][] getExcelData(){
+		Object[][] datas = ExcelReader.getValueFromExcel(excelFile);
+		return datas;
+	}
 
 }

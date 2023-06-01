@@ -1,0 +1,1348 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jun 1, 2023 09:02:07 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Nithya</a><a class="dropdown-item" href="#">Suchitra</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Regression</a><a class="dropdown-item" href="#">Smoke</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author="Nithya"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">Registration Test</p>
+            <p class="text-sm">
+              <span>9:02:16 AM</span> / <span>00:00:13:293</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Registration Test</h5>
+<span class='badge badge-success'>06.01.2023 9:02:16 AM</span>
+<span class='badge badge-danger'>06.01.2023 9:02:29 AM</span>
+<span class='badge badge-default'>00:00:13:293</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Nithya</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+<div class="m-t-10 m-l-5">Registration page validation</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:13:278</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="2"><span>Registration</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Nithya</span>
+<span class="badge badge-pill badge-default">Regression</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:17 AM</td>
+        <td>
+          The element Register For Account is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590336974.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590336974.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:17 AM</td>
+        <td>
+          The element username is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590337509.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590337509.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:17 AM</td>
+        <td>
+          The element password is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590337705.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590337705.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:18 AM</td>
+        <td>
+          The element email is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590337932.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590337932.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:18 AM</td>
+        <td>
+          The element Register Button is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590338100.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590338100.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:18 AM</td>
+        <td>
+          The element  is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590338386.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590338386.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:18 AM</td>
+        <td>
+          The element username is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590338731.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590338731.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:19 AM</td>
+        <td>
+          The element password is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590339070.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590339070.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:19 AM</td>
+        <td>
+          The element Sign In Button is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590339470.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590339470.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:20 AM</td>
+        <td>
+          The element Forgot Link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590339790.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590339790.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:20 AM</td>
+        <td>
+          The element Register Link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590340086.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590340086.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:20 AM</td>
+        <td>
+          The element Register For Account is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590340718.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590340718.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:21 AM</td>
+        <td>
+          The data: Ekaaksh entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590341623.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590341623.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:22 AM</td>
+        <td>
+          The dropdown is selected with text Mr
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590342164.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590342164.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:22 AM</td>
+        <td>
+          The data: Chandradev Guha Kaul entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590342657.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590342657.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:23 AM</td>
+        <td>
+          The data: Prajapat entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590343154.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590343154.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:23 AM</td>
+        <td>
+          The dropdown is selected with text Female
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590343552.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590343552.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:24 AM</td>
+        <td>
+          The data: usha.desai entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590344106.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590344106.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:24 AM</td>
+        <td>
+          The data: mangala.iyer@hotmail.com entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590344623.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590344623.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:25 AM</td>
+        <td>
+          The data: Ex0n05z0 entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590345136.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590345136.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:25 AM</td>
+        <td>
+          The element Register is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590345569.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590345569.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:26 AM</td>
+        <td>
+          The element Welcome Text is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590346661.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590346661.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:27 AM</td>
+        <td>
+          The element UIBank Logo is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590347140.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590347140.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:27 AM</td>
+        <td>
+          The element username is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590347627.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590347627.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:28 AM</td>
+        <td>
+          The element password is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590348101.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590348101.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:28 AM</td>
+        <td>
+          The element Sign In Button is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590348478.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590348478.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:29 AM</td>
+        <td>
+          The element Forgot Link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590348878.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590348878.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:29 AM</td>
+        <td>
+          The element Register Link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590349222.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590349222.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="Suchitra"
+          tag="Smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Test</p>
+            <p class="text-sm">
+              <span>9:02:17 AM</span> / <span>00:00:19:951</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Test</h5>
+<span class='badge badge-success'>06.01.2023 9:02:17 AM</span>
+<span class='badge badge-danger'>06.01.2023 9:02:37 AM</span>
+<span class='badge badge-default'>00:00:19:951</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Suchitra</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+<div class="m-t-10 m-l-5">Login page validation</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:19:950</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="4"><span>Login</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Suchitra</span>
+<span class="badge badge-pill badge-default">Smoke</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:17 AM</td>
+        <td>
+          The element username is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590337388.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590337388.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:18 AM</td>
+        <td>
+          The element password is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590337849.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590337849.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:18 AM</td>
+        <td>
+          The element Sign In Button is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590338111.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590338111.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:18 AM</td>
+        <td>
+          The element Forgot Link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590338402.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590338402.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:18 AM</td>
+        <td>
+          The element Register Link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590338653.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590338653.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:20 AM</td>
+        <td>
+          The data: saranyavinoth entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590340625.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590340625.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:21 AM</td>
+        <td>
+          The data: s@r@ny@ entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590341163.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590341163.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:22 AM</td>
+        <td>
+          The element Sign In is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590341764.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590341764.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:23 AM</td>
+        <td>
+          The element Welcome Text is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590342989.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590342989.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:23 AM</td>
+        <td>
+          The element Logout link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590343274.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590343274.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:23 AM</td>
+        <td>
+          The element Logout Link is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590343686.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590343686.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:24 AM</td>
+        <td>
+          The element username is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590344055.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590344055.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:24 AM</td>
+        <td>
+          The element password is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590344394.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590344394.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:24 AM</td>
+        <td>
+          The element Sign In Button is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590344706.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590344706.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:25 AM</td>
+        <td>
+          The element Forgot Link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590345045.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590345045.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:25 AM</td>
+        <td>
+          The element Register Link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590345397.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590345397.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:26 AM</td>
+        <td>
+          The data: Mathan entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590345946.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590345946.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:26 AM</td>
+        <td>
+          The data: Testing123 entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590346453.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590346453.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:27 AM</td>
+        <td>
+          The element Sign In is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590346951.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590346951.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:27 AM</td>
+        <td>
+          The element Welcome Text is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590347365.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590347365.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:27 AM</td>
+        <td>
+          The element Logout link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590347628.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590347628.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:28 AM</td>
+        <td>
+          The element Logout Link is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590348031.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590348031.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:28 AM</td>
+        <td>
+          The element username is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590348376.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590348376.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:28 AM</td>
+        <td>
+          The element password is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590348715.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590348715.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:29 AM</td>
+        <td>
+          The element Sign In Button is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590349069.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590349069.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:29 AM</td>
+        <td>
+          The element Forgot Link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590349399.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590349399.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:30 AM</td>
+        <td>
+          The element Register Link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590349766.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590349766.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:30 AM</td>
+        <td>
+          The data: suchitramadhan@gmail.com entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590350380.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590350380.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:31 AM</td>
+        <td>
+          The data: RamAadhithan2019@ entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590350928.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590350928.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:31 AM</td>
+        <td>
+          The element Sign In is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590351346.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590351346.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:31 AM</td>
+        <td>
+          The element Welcome Text is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590351748.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590351748.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:32 AM</td>
+        <td>
+          The element Logout link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590351938.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590351938.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:32 AM</td>
+        <td>
+          The element Logout Link is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590352298.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590352298.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:33 AM</td>
+        <td>
+          The element username is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590352906.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590352906.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:33 AM</td>
+        <td>
+          The element password is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590353348.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590353348.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:34 AM</td>
+        <td>
+          The element Sign In Button is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590353732.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590353732.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:34 AM</td>
+        <td>
+          The element Forgot Link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590354160.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590354160.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:34 AM</td>
+        <td>
+          The element Register Link is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590354473.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590354473.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:35 AM</td>
+        <td>
+          The data: Mathan entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590355299.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590355299.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:36 AM</td>
+        <td>
+          The data: test123 entered successfully in the field :
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590355980.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590355980.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:36 AM</td>
+        <td>
+          The element Sign In is clicked
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590356479.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590356479.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:02:37 AM</td>
+        <td>
+          The element Failure text is visible
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590356910.png' src="D:\Corporate Training\Giving Force\Batch15TestNGFrameWork/snap/img1685590356910.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Regression</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:02:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Registration Test</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Smoke</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:02:17 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Login Test</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Nithya</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Nithya</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:02:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Registration Test</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Suchitra</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Suchitra</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:02:17 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Login Test</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jun 1, 2023 09:02:07 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jun 1, 2023 09:02:38 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>2</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>2</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>2</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>70</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Registration Test":13.293,"Login Test":19.951
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>Nithya</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Suchitra</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Regression</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Smoke</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 2,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 2,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 70,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 0
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
